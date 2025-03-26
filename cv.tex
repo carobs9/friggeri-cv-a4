@@ -29,6 +29,9 @@
 
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
+\addtolength{\textheight}{1cm}
+
+
 \begin{document}
 
 \header{carolina}{brañas}{data scientist} % Your name and current job title/field
@@ -39,22 +42,40 @@
 
 \begin{aside} % In the aside, each new line forces a line break
 \section{contact}
-Copenhagen, Capital Region 2300
+Copenhagen,
+2300
 Denmark
 ~
 +34 644 004 477
 +45 60 90 73 33
 ~
-\href{mailto:carobrasor@gmail.com}{email}
-\href{https://carobs9.github.io/}{website}
-\href{https://www.linkedin.com/in/carolinabranas/}{linkedin}
-\href{https://github.com/carobs9}{github}
+\href{mailto:carobrasor@gmail.com}{email:carobrasor@gmail.com}
+\href{https://carobs9.github.io/}{website:carobs9.github.io}
+\href{https://www.linkedin.com/in/carolinabranas/}{linkedin:carolinabranas}
+\href{https://github.com/carobs9}{github:carobs9}
 \section{languages}
-spanish: mother tongue
-english \& galician: fluency
-\section{programming}
-Python, SQL, HTML, CSS
-Git
+spanish \& galician: mother tongue
+english: fluent
+portuguese: beginner
+\section{programming languages}
+Python
+SQL
+HTML
+CSS
+LaTex
+\section{data science skills}
+version control (Git)
+machine learning
+data collection
+data visualization
+NLP
+network science
+geospatial data
+artificial intelligence
+\section{relational skills}
+team-work oriented
+communicative
+critical thinking
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -62,6 +83,13 @@ Git
 %----------------------------------------------------------------------------------------
 
 \section{about me}
+
+\renewcommand{\section}[1]{
+  \par\vspace{\parskip}
+  \noindent
+  \textcolor{purple}{\rule{3pt}{18pt}} \hspace{0.5em}
+  {\LARGE\headingfont\color{headercolor}\textsc{#1}}\par\vspace{\parskip}
+}
 
 Data scientist particularly interested in the fields of machine learning, network analysis, natural language processing and urban mobility. \\
 Eager to use these tools to find relevant solutions to actual problems.
@@ -81,22 +109,42 @@ Eager to use these tools to find relevant solutions to actual problems.
 {2022--2025}
 {Masters {\normalfont of Social Data Science}}
 {The University of Copenhagen, Denmark}
-{\emph{Mobility and Income Segregation in Madrid, Spain} \\ This thesis explores the relationship between income inequality and urban mobility in the city of Madrid.}
-
+{\emph{\href{https://github.com/carobs9/segregation-madrid}{\textbf{Thesis} Mobility and Income Segregation in Madrid, Spain}.} \\ 
+This thesis explores the relationship between income inequality and urban mobility in the city of Madrid. \\
+\textbf{Elective courses}
+\begin{itemize}
+    \item Advanced Machine Learning - IT University of Copenhagen
+    \item Advanced Network Science - IT University of Copenhagen
+    \item Geospatial Data Science - IT University of Copenhagen
+    \item Natural Language Processing - Computer Science Department, University of Copenhagen (DIKU)
+\end{itemize}}
 %------------------------------------------------
 
 \entry
 {2018--2022}
 {Bachelor {\normalfont of Business}}
 {Cardinal Stritch University, United States}
-{Specialization in Marketing}
-
+{\emph{Specialization in Marketing} \\
+\textbf{Competences}
+\begin{itemize}
+    \item Micro - macro economics
+    \item Statistics
+    \item Econometrics and finance
+    \item Marketing
+\end{itemize}}
 %------------------------------------------------
 
 \entry
 {2018--2022}
 {Minor {\normalfont of Computer Science}}
 {Cardinal Stritch University, United States}
+{\textbf{Competences}
+\begin{itemize}
+    \item Programming languages: HTML, CSS, JavaScript
+    \item Computer architecture
+    \item Introduction to data mining tools, processes and issues
+    \item UX and webpage design
+\end{itemize}}
 
 \end{entrylist}
 
@@ -118,12 +166,11 @@ Eager to use these tools to find relevant solutions to actual problems.
 {Copenhagen, Denmark}
 {\emph{Research Assistant in Data Science} \\
 Continued working along a team of researchers for the project \emph{Shocking Religion}, which examines the impact of religion on economic factors using shocks to religion as natural experiments. \\
-Detailed achievements:
 \begin{itemize}
-\item Worked collaboratively into building, finetuning and deploying Transformer models for classification tasks.
-\item Developed advanced topic modelling techniques (mainly Transformer models) to analyze textual data from religious non-profit organizations. This project included building preprocessing pipelines, model training, evaluation and visualization.
-\item Gathered, processed, and performed time-series analysis on county level U.S. data, covering several economic factors (GDP, population, public spending, poverty rates, etc.).
-\item Integrated geospatial raster and polygon data to assess and visualize earthquake exposure across global regions.
+\item Worked collaboratively into building, finetuning and deploying Transformer models for classification tasks
+\item Developed advanced topic modelling techniques (mainly Transformer models) to analyze textual data from religious non-profit organizations. This project included building preprocessing pipelines, model training, evaluation and visualization
+\item Gathered, processed, and performed time-series analysis on county level U.S. data, covering several economic factors (GDP, population, public spending, poverty rates, etc.)
+\item Integrated geospatial raster and polygon data to assess and visualize earthquake exposure across global regions
 \end{itemize}}
 
 %------------------------------------------------
@@ -134,11 +181,10 @@ Detailed achievements:
 {Copenhagen, Denmark}
 {\emph{Data Analyst} \\
 Worked as a data analyst in Above Sports, a sponsorship measuring platform.
-Detailed achievements:
 \begin{itemize}
-\item Worked collaboratively with the data science team to improve processes automation and overall product performance.
+\item Worked collaboratively with the data science team to improve processes automation and overall product performance
 \item Built automation pipelines for machine learning tasks.
-\item Built computer vision machine learning models to improve the company's logo detection tool.
+\item Built computer vision machine learning models to improve the company's logo detection tool
 \end{itemize}}
 
 %------------------------------------------------
@@ -164,12 +210,11 @@ Collaborated along a team of researchers for the project \emph{Shocking Religion
 {Milwaukee, United States}
 {\emph{Marketing Strategist} \\
 Joined the digital marketing strategy team at Crescendo Collective, a global digital transformation and creative marketing agency.\\
-Detailed achievements:
 \begin{itemize}
-\item Performed data analysis using Google Analytics and Google Ads data for clients, delivering detailed reports based on the findings.
-\item Delivered internal and external research for the organization, such as competitors’ analysis and performance reports.
-\item Developed page audits for the clients, as well as speed audits and research-based audits.
-\item Worked with the data team on internal processes' automation pipelines.
+\item Performed data analysis using Google Analytics and Google Ads data for clients, delivering detailed reports based on the findings
+\item Delivered internal and external research for the organization, such as competitors’ analysis and performance reports
+\item Developed page audits for the clients, as well as speed audits and research-based audits
+\item Worked with the data team on internal processes' automation pipelines
 \end{itemize}}
 
 %------------------------------------------------
@@ -180,20 +225,45 @@ Detailed achievements:
 {Milwaukee, United States}
 {\emph{Student Ambassador} \\
 Joined the digital marketing strategy team at Crescendo Collective, a global digital transformation and creative marketing agency.\\
-Detailed achievements:
 \begin{itemize}
-\item Worked face to face with future clients and visitors.
-\item Assisted admissions workers with main admissions events and fairs.
-\item  Performed tours throughout the college campus for potential future students.
-\item ctively participated in admissions events and the whole admissions process for future students.
+\item Worked face to face with future clients and visitors
+\item Assisted admissions workers with main admissions events and fairs
+\item Performed tours throughout the college campus for potential future students
+\item Actively participated in admissions events and the whole admissions process for future students
 \end{itemize}}
 
 %------------------------------------------------
 
+\end{entrylist}
+
+\subsection{Volunteering}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2023}
+{Distortion Festival}
+{Copenhagen, Denmark}
+{
+\begin{itemize}
+\item Helped set up bars and infrastructure for the event and deliveringcustomer service
+\item Delivered drinks and food to the festival participants
+\end{itemize}}
+
+%------------------------------------------------
+
+\entry
+{2021}
+{Urban Ecology Center}
+{Milwaukee, United States}
+{Helped on tree repopulation tasks in the Menomonee Valley area.}
+
+%----------------------------------------------------------------------------------------
 
 \end{entrylist}
 
-%----------------------------------------------------------------------------------------
 % AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
@@ -212,7 +282,7 @@ Detailed achievements:
 %------------------------------------------------
 
 \entry
-{2018 to 2022}
+{2018--2022}
 {Dean's List}
 {Cardinal Stritch University}
 {Achieved Dean's List in every semester of my bachelors degree (Spring and Fall, 2018, 2019, 2020, 2021)
