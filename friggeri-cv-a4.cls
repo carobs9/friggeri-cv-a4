@@ -359,3 +359,9 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \makeatletter
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
 \makeatother
+
+%%%%%%%%%%
+% My own tweaks %
+%%%%%%%%%%
+
+\RequirePackage{pifont}
