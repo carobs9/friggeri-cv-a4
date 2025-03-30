@@ -6,6 +6,8 @@ Fork of the ShareLateX version of the [Friggeri CV](https://www.sharelatex.com/t
 
 ## Usage
 
+Run lualatex cv.tex
+
 Run `make pdf` to create the PDF (`cv.pdf`).
 See `make help` for an overview of available targets.
 
